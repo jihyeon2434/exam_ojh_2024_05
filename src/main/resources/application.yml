@@ -1,17 +1,6 @@
 server:
   port: 8081
 spring:
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: 
-#    password: 앱 비밀번호
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
   servlet:
     multipart:
       max-file-size: 100MB
@@ -23,14 +12,14 @@ spring:
   datasource:
 #    driver-class-name: com.mysql.jdbc.Driver
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/Spring_AM_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
+    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/exam_ojh_24_05?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
     username: root
     password: 
 mybatis:
   type-aliases-package: com.example.demo.vo
 custom:
-  siteName: 2024_01_Spring_AM
+  siteName: exam_ojh_24_05
   siteMainUri: http://localhost:8081
   emailFrom: no-reply@localhost
-  emailFromName: 2024_01_Spring_AM
+  emailFromName: exam_ojh_24_05
   genFileDirPath: C:\work\sts-4.19.1.RELEASE-workspace2\demo\images
